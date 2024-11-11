@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .printable,
+    .printable * {
+        visibility: visible;
+    }
+
+    .printable {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+/* Neumorphism style */
+.neumorphism-container {
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.neumorphism-button {
+    background: #e0e0e0;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+    transition: 0.3s;
+}
+
+.neumorphism-button:hover {
+    box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+}
+
+.neumorphism-background {
+    background: #e0e5ec;
+    box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+.neumorphism-card {
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+}
+
+.neumorphism-input {
+    box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+.neumorphism-button {
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
